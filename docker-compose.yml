@@ -12,23 +12,23 @@ services:
     ports:
       - "8080:80"
 
-  # app001:
-  #     build:
-  #         context: ./
-  #         dockerfile: node.docker
-  #     volumes:
-  #       - ./public:/usr/src/app
-  #     ports:
-  #         - "8081:3000"
-  #
-  # app002:
-  #     build:
-  #         context: ./
-  #         dockerfile: node.docker
-  #     volumes:
-  #       - ./public:/usr/src/app
-  #     ports:
-  #         - "8082:3000"
+  app001:
+      build:
+          context: ./
+          dockerfile: node.docker
+      volumes:
+        - ./public:/usr/src/app
+      ports:
+          - "8081:3000"
+
+  app002:
+      build:
+          context: ./
+          dockerfile: node.docker
+      volumes:
+        - ./public:/usr/src/app
+      ports:
+          - "8082:3000"
 
   # app001:
   #   build:
