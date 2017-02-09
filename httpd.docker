@@ -1,0 +1,5 @@
+FROM httpd
+
+RUN apt-get update
+RUN apt-get -y install less vim curl
+RUN apt-get -y install lsof tcpdump
